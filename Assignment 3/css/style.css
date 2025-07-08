@@ -78,7 +78,7 @@ img {
     /* justify-content: center;
     align-items: center;
     margin : 0 auto; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-image: url("/images/bg_image.png");
     background-repeat: no-repeat;
     height: 100vh;
@@ -95,7 +95,7 @@ img {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .heroSection h1 {
@@ -123,11 +123,13 @@ img {
     padding: 19px 38px;
     margin-bottom: 222px;
     gap: 16px;
+
 }
+
 
 .bannerTitle {
     color: white;
-    padding-top: 210px;
+    /* padding-top: 210px; */
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
