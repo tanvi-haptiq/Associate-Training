@@ -5,15 +5,18 @@
     text-decoration: none;
 }
 
+
 header {
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    border: 2px solid purple;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    /* border: 2px solid purple; */
+    width: 100%;
+    padding: 20px 20px;
 }
 
 img {
@@ -27,13 +30,22 @@ img {
 .navigationBar {
     display: flex;
     gap: 41px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resIcon {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .logo a {
     font-size: 30px;
     padding: 30px 0px;
     color: white;
-    border: 1px solid chocolate;
+    /* border: 1px solid chocolate; */
 }
 
 .navigate {
@@ -41,8 +53,10 @@ img {
     gap: 235px;
 }
 
-.quickLinks {
+.quickLinks a {
     gap: 41px;
+    color: #FFFFFF;
+
 }
 
 .quickLinks ul {
@@ -50,7 +64,7 @@ img {
     display: flex;
     /* justify-content:space-between; */
     list-style: none;
-    border: 2px solid palevioletred;
+    /* border: 2px solid palevioletred; */
     padding: 17px 0px;
 }
 
@@ -58,60 +72,61 @@ img {
     gap: 100px;
     display: flex;
     margin-left: 18px;
-    border: 2px solid palevioletred;
+    /* border: 2px solid palevioletred; */
     /* padding: 3px 0px; */
 }
 
-.login {
-    padding: 15px 30px;
+.login a {
+    display: flex;
+    text-align: center;
+    gap: 45px;
+    padding: 15px 25px;
+    color: #FFFFFF;
 }
 
-.beAMember {
-    /* padding: 15px 30px; */
+.blueBtn a {
+    padding: 15px 25px;
     background-color: #23A6F0;
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.beAMember a {
-    color: white;
-    padding: 15px 30px;
-    align-items: center;
-}
-
-.beAMember img {
-    padding: 21px 0px;
-    width: 12px;
-    height: 10px;
-}
+/* .beAMember img { */
+/* padding: 21px 0px; */
+/* width: 12px;
+    height: 10px; */
 
 /* banner section */
 
-.bgWrap {
-    background: #000000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
-    height: 100%;
-}
 
 .banner {
     /* border: 2px solid black; */
     background-image: url("/images/bg_image.jpg");
     background-repeat: no-repeat;
-    min-height: 100vh;
-    /* width: 100%; */
+    height: 100vh;
+    width: 100%;
     background-size: cover;
-    /* background-position: 0; */
-    /* margin-bottom: 28px; */
+    background-position: 0;
     object-fit: cover;
     margin-top: -170px;
-    align-items: center;
-    display: flex;
 }
 
+
+.bgWrap {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
 
 .posterSection {
     /* padding: 112px 0px; */
     height: 100%;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 
 }
 
@@ -125,6 +140,7 @@ img {
     font-size: 20px;
     font-weight: 200;
     padding: 35px 0px;
+    color: #FFFFFF;
 }
 
 .bannerButton {
@@ -138,6 +154,10 @@ img {
     color: white;
     border-radius: 37px;
     border: none;
+}
+
+.learnMore a {
+    color: white;
 }
 
 .learnMore button {
@@ -156,16 +176,15 @@ img {
 .serviceList {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 96px 2px;
 }
 
 .servicesSection {
     /* border: 2px solid blue; */
     text-align: center;
-    padding: 40px 50px;
-}
-
-.serviceList {
-    padding: 96px 0px 96px 0px;
+    padding: 40px 0px;
 }
 
 .serviceIcon img {
@@ -203,6 +222,11 @@ img {
 .industry {
     background-color: #8EC2F2;
     width: 100%;
+
+}
+
+.industryHeader {
+    margin-bottom: 80px;
 }
 
 .industryDetail {
@@ -225,21 +249,33 @@ img {
     font-size: 14px;
 }
 
+
+
 .blogWrap {
     display: flex;
     justify-content: center;
     text-align: left;
+    gap: 100px;
     padding: 24px 40px;
+
 }
 
 .blog {
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     background-color: #FFFFFF;
     padding: 30px 40px;
+    position: relative;
 }
 
 .blogName {
     margin-bottom: 15px;
+}
+
+.blogName img {
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    left: -47px;
 }
 
 .blogName h3 {
@@ -254,11 +290,13 @@ img {
     font-size: 14px
 }
 
-.blogRating {
+.blogRating img {
     margin-bottom: 15px;
+    height: 22px;
+    width: 130px;
 }
 
-.blogDescp {
+.blogDescp p {
     color: #737373;
     font-weight: 500;
     font-size: 14px;
@@ -272,19 +310,19 @@ img {
     width: 100%;
 }
 
+.lifeTips .industryHeader {
+    color: white;
+}
+
+.industryDetail {
+    padding: 96px 2px;
+}
+
 .industryDetail h2 {
     color: white;
     font-weight: 700;
     font-size: 40px;
 }
-
-/* 
-.blog p {
-    color: white;
-    font-weight: 500;
-    font-size: 14px;
-} */
-
 
 /* cards */
 .section4Card {
@@ -303,6 +341,7 @@ img {
     /* padding: 20px 20px; */
     left: 20px;
     bottom: 17.5px;
+    text-align: left;
 }
 
 .postDetails h6 {
@@ -322,7 +361,7 @@ img {
 }
 
 .lifeTipsList {
-    margin-bottom: 100px;
+    margin-bottom: 112px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,7 +386,9 @@ img {
     gap: 30px;
     text-align: left;
     margin-bottom: 50px;
-    justify-content: space-around;
+    padding: 50px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .accessFooter h5 {
@@ -366,9 +407,11 @@ img {
     margin-bottom: 50px;
     font-weight: 600;
     font-size: 14px;
-    color: white;
     list-style: none;
+}
 
+.accessFooter a {
+    color: white;
 
 }
 
@@ -381,4 +424,37 @@ img {
     color: white;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.footerEnd {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.footerText {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.footerEnd h6 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #737373;
+}
+
+.footerLogo {
+    display: flex;
+    gap: 20px;
+    /* padding-right: 213px; */
+}
+
+.footerLogo img {
+    justify-content: center;
+    height: 24px;
+    width: 24px;
 }
