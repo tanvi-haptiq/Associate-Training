@@ -1,0 +1,241 @@
+/* Header */
+* {
+  font-family: Heebo;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav_Bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner {
+  padding: 160px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Banner-Section */
+.resIcon {
+  /* border: 2px solid black; */
+  display: none;
+  
+}
+
+.johnBio {
+  flex: 8;
+}
+
+.johnBio p {
+  margin-bottom: 38px;
+}
+
+.johnDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #21243d;
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #21243d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.downloadBtn {
+  background-color: #ff6464;
+  text-align: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.cover_Image {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  /* border: 2px solid purple; */
+  overflow: hidden;
+  box-shadow: -16px 16px 0px -9px rgba(237, 247, 250, 1);
+}
+
+/* Recent Posts*/
+.recentPosts {
+  background-color: #edf7fa;
+  margin-bottom: 32px;
+  padding: 32px 0;
+}
+
+.quickLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 30px 10px;
+}
+
+.quickLinks a {
+  color: #00A8CC;
+}
+
+.cardsSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  padding: 34px;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cardBody {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 30px
+}
+
+/* Featured Works */
+
+.featuredWorks {
+  display: flex;
+  font-weight: 400;
+}
+
+.lastSection {
+  margin: 0 auto;
+}
+
+.featured {
+  display: flex;
+  gap: 20px;
+  /* margin: 20px 100px; */
+  padding: 20px 0px;
+  border-bottom: 2px solid rgba(224, 224, 224, 1);
+}
+
+.fwImg img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.fwDetails {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.fwYear {
+  color: #ffffff;
+  background-color: #142850;
+  width: 62px;
+  font-family: Heebo;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.fwType {
+  color: #8695a4;
+  font-family: Heebo;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.fwDescp {
+  color: #21243d;
+  width: 594px;
+  font-family: Heebo;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.fwDescp h2 {
+  color: #21243d;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  margin-bottom: 16px;
+
+}
+
+/* Footer */
+
+.footerSection {
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.socialMediaLogos ul {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+
+ul a:hover {
+  color: #FF6464;
+}
+
+.socialMediaHandles {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.socialMediaHandles li {
+  list-style: none;
+}
+
+.footerDescp {
+  padding: 10px;
+}
