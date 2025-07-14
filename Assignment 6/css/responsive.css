@@ -33,3 +33,24 @@
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width:768px) {
+    .navMenu {
+        display: none;
+    }
+
+    .bannerDetails {
+        flex-direction: column-reverse;
+    }
+
+    .messageDetails {
+        flex-direction: column;
+    }
+
+    .teamMembers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+   
+}

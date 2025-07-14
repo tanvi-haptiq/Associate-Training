@@ -284,7 +284,10 @@ header {
 .pricing {
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
+
 
 .pricing sup {
     color: #21252980;
@@ -297,7 +300,13 @@ header {
 }
 
 .pricingDetails {
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
     margin-bottom: 52px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .check {
@@ -342,3 +351,9 @@ header {
 .copyrightsText {
     color: white;
 }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
