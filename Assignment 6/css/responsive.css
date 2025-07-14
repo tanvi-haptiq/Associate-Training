@@ -1,0 +1,35 @@
+/* For dimension - 991px */
+
+/* container dimensions for mobile */
+
+@media screen and (max-width:991px) {
+    .navMenu {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .bannerIntro img {
+        width: 335px;
+        height: 197px;
+    }
+
+    .partnersIntro {
+        text-align: left;
+    }
+
+    .partnersIntro h2 {
+        text-align: left;
+    }
+
+    .partnersLogos {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .learn {
+        align-items: flex-start;
+    }
+}

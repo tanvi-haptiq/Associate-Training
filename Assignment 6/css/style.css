@@ -1,0 +1,344 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 1.6;
+    list-style: none;
+}
+
+h2 {
+    font-family: "Crimson Text", sans-serif;
+    /* font-family: Crimson Text; */
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* conatiner dimensions for desktop */
+
+.container {
+    max-width: 1180px;
+    padding: 16px 16px;
+    margin: 0 auto;
+}
+
+/*header section - navBar class*/
+
+header {
+    background-color: #74C69D;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+.navMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.navMenu a {
+    gap: 10px;
+    color: #ffff;
+    font-size: 20px;
+}
+
+/*banner section - bannerDetails*/
+
+.banner {
+    width: 100%;
+    background-color: #74C69D;
+    margin-bottom: 60px;
+}
+
+.bannerDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.bannerIntro span {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+}
+
+.bannerIntro h2 {
+    color: #fff;
+    text-align: left;
+}
+
+.bannerIntro p {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.explore {
+    background-color: #fff;
+    padding: 13px 49px;
+    border-radius: 5px;
+    font-family: "Work sans", sans serif;
+    color: black;
+
+}
+
+/* partners section - partnersDetails*/
+
+.partnersDetails {
+    text-align: center;
+    margin-bottom: 73px;
+}
+
+.partnersIntro {
+    margin-bottom: 55px;
+}
+
+.partnersIntro span {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #74C69D;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 16px;
+}
+
+.partnersIntro h2 {
+    color: black;
+    margin-bottom: 16px;
+}
+
+.partnersLogos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 68px;
+    margin-bottom: 55px;
+}
+
+.learn {
+    padding: 13px 30px;
+    background-color: black;
+    color: #ffff;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Work sans", sans serif;
+}
+
+/* message section - messageDetails*/
+
+.messageDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 110px;
+    margin-bottom: 74px;
+}
+
+.img {
+    width: 600px;
+    height: 432px;
+}
+
+.messageInfo {
+    padding: 83px 83px;
+    text-align: left;
+}
+
+.messageInfo h2 {
+    margin-bottom: 16px;
+}
+
+.messageInfo p {
+    margin-bottom: 16px;
+    color: #21252980;
+
+}
+
+.learn {
+    padding: 13px 30px;
+    background-color: black;
+    color: #ffff;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Work sans", sans serif;
+}
+
+
+.reverse {
+    flex-flow: row-reverse;
+    margin-bottom: 103px;
+}
+
+
+/* team section - teamDetails */
+
+.teamDetails {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.teamIntro {
+    margin-bottom: 45px;
+}
+
+.teamIntro span {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #74C69D;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 16px;
+}
+
+.teamMembers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.teamMembers img {
+    height: 175px;
+    width: 175px;
+    border-radius: 100px;
+    border: 2px solid black;
+    margin-bottom: 19px;
+    gap: 47px;
+}
+
+.member {
+    border: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px 25px;
+}
+
+.member p {
+    text-align: left;
+}
+
+.view {
+    padding: 13px 30px;
+    background-color: black;
+    color: #ffff;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Work sans", sans serif;
+}
+
+
+/* service section - serviceDetails */
+
+.servicesDetails span {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #74C69D;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 16px;
+}
+
+.servicesDetails {
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+.service {
+    border: 2px solid black;
+    padding: 46px 30px;
+    margin-bottom: 135px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+.pricingType {
+    margin-top: 10px;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+}
+
+.pricing sup {
+    color: #21252980;
+
+}
+
+.pricingNote {
+    margin-bottom: 52px;
+    color: #21252980;
+}
+
+.pricingDetails {
+    margin-bottom: 52px;
+}
+
+.check {
+    color: #74C69D;
+}
+
+.pricingInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+    gap: 09px;
+}
+
+.learn {
+    padding: 13px 30px;
+    background-color: black;
+    color: #ffff;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Work sans", sans serif;
+}
+
+/* footer section - footerDetails */
+.footerDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 610px;
+    background-color: #74C69D;
+    width: 100%;
+    padding: 50px 131px;
+}
+
+.footerLogos ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5px 3.5px;
+    gap: 20px;
+}
+
+.copyrightsText {
+    color: white;
+}
