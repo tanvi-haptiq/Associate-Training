@@ -44,7 +44,7 @@ header {
 .resIcon {
   /* border: 2px solid black; */
   display: none;
-  
+
 }
 
 .johnBio {
@@ -81,6 +81,7 @@ p {
   padding: 12px 24px;
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 
 .cover_Image {

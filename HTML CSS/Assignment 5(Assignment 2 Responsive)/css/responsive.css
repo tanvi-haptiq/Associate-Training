@@ -22,7 +22,14 @@
 }
 
 @media screen and (max-width:767px) {
-    .socialMediaHandles {
+    /* .socialMediaHandles {
         flex-direction: column;
+    } */
+}
+
+
+@media screen and (max-width:767px) {
+    .johnDetails {
+        flex-direction: column-reverse;
     }
 }

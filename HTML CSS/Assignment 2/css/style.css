@@ -40,7 +40,7 @@ header {
 /* Banner-Section */
 
 .section1 {
-  display: flex;
+  display: flex;;
   padding: 50px 10px;
   /* gap:300px; */
 }
