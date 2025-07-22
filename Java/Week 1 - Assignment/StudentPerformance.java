@@ -12,8 +12,10 @@ Calculate max/min/average grades
 Save report to text or JSON file*/
 
 import java.util.Scanner;
+
 import java.io.FileWriter;
 import java.io.IOException;
+
 public class StudentPerformance {
     static Scanner scanner = new Scanner(System.in);
     static String[] studentNames = new String[100];
@@ -21,6 +23,7 @@ public class StudentPerformance {
     static int[][] marks = new int[100][10];
     static int[] subjectCounts = new int[100];
     static int studentCount = 0;
+
     public static void main(String[] args) {
         int choice;
         do {
@@ -33,15 +36,22 @@ public class StudentPerformance {
             System.out.print("Enter your choice: ");
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
-                case 1: addStudent();
-                case 2: enterSubjectsAndMarks();
-                case 3: determineResults();
-                case 4: saveToFile();
-                case 5: System.out.println("Exiting program.");
-                default: System.out.println("Invalid choice. Try again.");
+                case 1:
+                    addStudent();
+                case 2:
+                    enterSubjectsAndMarks();
+                case 3:
+                    determineResults();
+                case 4:
+                    saveToFile();
+                case 5:
+                    System.out.println("Exiting program.");
+                default:
+                    System.out.println("Invalid choice. Try again.");
             }
         } while (choice != 5);
     }
+
     static void addStudent() {
         System.out.print("Enter student name: ");
         String name = scanner.nextLine();
@@ -49,6 +59,7 @@ public class StudentPerformance {
         studentCount++;
         System.out.println("Student added.");
     }
+
     static void enterSubjectsAndMarks() {
         if (studentCount == 0) {
             System.out.println("Please add students first.");
@@ -71,6 +82,7 @@ public class StudentPerformance {
             }
         }
     }
+
     static void determineResults() {
         if (studentCount == 0) {
             System.out.println("No data to process.");
@@ -84,8 +96,10 @@ public class StudentPerformance {
             for (int j = 0; j < subjectCounts[i]; j++) {
                 int mark = marks[i][j];
                 total += mark;
-                if (mark > max) max = mark;
-                if (mark < min) min = mark;
+                if (mark > max)
+                    max = mark;
+                if (mark < min)
+                    min = mark;
                 String result;
                 if (mark < 35)
                     result = "Fail";
@@ -101,6 +115,7 @@ public class StudentPerformance {
             System.out.println("Maximum Marks: " + max);
         }
     }
+
     static void saveToFile() {
         try {
             FileWriter writer = new FileWriter("student_report.txt");
@@ -112,8 +127,10 @@ public class StudentPerformance {
                 for (int j = 0; j < subjectCounts[i]; j++) {
                     int mark = marks[i][j];
                     total += mark;
-                    if (mark > max) max = mark;
-                    if (mark < min) min = mark;
+                    if (mark > max)
+                        max = mark;
+                    if (mark < min)
+                        min = mark;
                     String result;
                     if (mark < 35)
                         result = "Fail";
