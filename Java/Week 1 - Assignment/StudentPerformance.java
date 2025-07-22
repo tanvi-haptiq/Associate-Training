@@ -12,7 +12,6 @@ Calculate max/min/average grades
 Save report to text or JSON file*/
 
 import java.util.Scanner;
-
 import java.io.FileWriter;
 import java.io.IOException;
 
