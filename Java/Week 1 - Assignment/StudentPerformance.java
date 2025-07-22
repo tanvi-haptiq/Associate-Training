@@ -21,6 +21,7 @@ public class StudentPerformance {
     static String[][] subjectNames = new String[100][10];
     static int[][] marks = new int[100][10];
     static int[] subjectCounts = new int[100];
+
     static int studentCount = 0;
 
     public static void main(String[] args) {
