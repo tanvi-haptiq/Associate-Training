@@ -1,0 +1,70 @@
+/* responsive design */
+@media screen and (max-width:992px) {
+    .navigate {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .resIcon {
+        display: flex;
+    }
+
+    .navigationBar {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .serviceList {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 96px 2px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .blogWrap {
+        flex-direction: column;
+        padding: 96px 110px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .lifeTipsList {
+        margin-bottom: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .accessFooter {
+        flex-direction: row;
+        display: flex;
+        gap: 30px;
+        text-align: left;
+        margin-bottom: 50px;
+        padding: 50px;
+        margin: 0 auto;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width:768px) {
+    .accessFooter {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footerText {
+        flex-direction: column;
+    }
+}
