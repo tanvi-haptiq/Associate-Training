@@ -1,4 +1,4 @@
-/* PROBLEM STATEMENT - 
+package Java.Assignment1;/* PROBLEM STATEMENT -
 Design a command-line Java application that allows instructors to record and compute the academic 
 performance of multiple students across various subjects. 
 The app must allow entering marks, calculating averages, determining pass/fail status, 
