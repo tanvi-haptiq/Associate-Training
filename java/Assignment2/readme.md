@@ -1,11 +1,47 @@
+# Java Chatroom Application
 
-This project simulates a real-time chat room, demonstrating core functionalities like user management, message exchange, and message history storage. It uses generic data structures for diverse message types and ensures efficient, sorted organization of users and messages.
+A simple Java-based chatroom simulation demonstrating the use of:
 
-Features - 
-User Management: Active users are stored in a Set.
+- Generics (`Message<T>`)
+- Java Collections (`TreeSet`, `HashMap`)
+- `Comparable` and sorting logic
+- LocalDateTime for timestamps
+- Clean modular object-oriented design
 
-Generic Message Handling: A custom Message<T> class supports various message types (text, image, etc.).
+---
 
-Message History: Messages are stored in a Map<User, List<Message>>.
+## 📁 Project Structure
 
-Sorted Display: Users are sorted alphabetically; messages by timestamp.
+chatapp/
+├── Chatroom.java
+├── Menu.java
+├── Message.java
+└── User.java
+
+
+---
+
+## 🚀 Features
+
+- Create a chatroom with a name and ID
+- Add users to the chatroom
+- Send messages of various types (e.g., text, image) using generics
+- View message history per user, sorted by timestamp
+- Exit users and prevent message sending after exit
+- Sorted display of users and messages
+
+---
+
+## 🧪 Sample Output Highlights
+
+- User join/exit notifications
+- Sent message logs
+- Full message history with timestamps
+- Attempted message send by a user who has left the room
+
+---
+
+## 📦 How to Run
+
+javac Menu.java
+java Menu
